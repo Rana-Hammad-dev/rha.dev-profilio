@@ -99,6 +99,3 @@ export const timeline = [
     color: 'bg-tertiary'
   }
 ];
-
-export const PROFILE_PIC = "/profile.jfif"
-export const ABOUT_PIC = "/pic.jpeg"
