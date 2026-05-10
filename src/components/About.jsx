@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { stats, ABOUT_PIC } from '../constants';
+import { stats } from '../constants';
 
 const Architect = ({ variants, itemVariants }) => {
   return (
@@ -20,7 +20,7 @@ const Architect = ({ variants, itemVariants }) => {
             <div className="glass-card p-1 rounded-[3.5rem] overflow-hidden group shadow-2xl">
               <div className="relative aspect-[4/5] rounded-[3.3rem] overflow-hidden">
                 <img
-                  src={ABOUT_PIC}
+                  src="/pic.jpeg"
                   className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 scale-105 group-hover:scale-100"
                   alt="Rana Hammad Ali"
                 />
