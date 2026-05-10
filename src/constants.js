@@ -100,5 +100,5 @@ export const timeline = [
   }
 ];
 
-export const PROFILE_PIC = "/profile.jfif"
+export const PROFILE_PIC = "/profile.jpg"
 export const ABOUT_PIC = "/pic.jpeg"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { stats, ABOUT_PIC } from '../constants';
+import { stats } from '../constants';
+import { ABOUT_PIC } from '../constants'
 
 const Architect = ({ variants, itemVariants }) => {
   return (
@@ -23,9 +24,6 @@ const Architect = ({ variants, itemVariants }) => {
                   src={ABOUT_PIC}
                   className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 scale-105 group-hover:scale-100"
                   alt="Rana Hammad Ali"
-                  onError={(e) => {
-                    e.target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
                 <div className="absolute bottom-10 left-10 right-10">
@@ -60,14 +58,14 @@ const Architect = ({ variants, itemVariants }) => {
               ))}
             </div>
 
-            <button  onClick={(e) => document.getElementById('journey').scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 px-10 py-5 glass-card rounded-2xl group border-primary/20 hover:border-primary transition-all text-lg font-bold">
+            <button onClick={(e) => document.getElementById('journey').scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 px-10 py-5 glass-card rounded-2xl group border-primary/20 hover:border-primary transition-all text-lg font-bold">
               <span>Deep Dive into Experience</span>
-            <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all text-2xl">
-              →
-            </div>
-          </button>
-      </motion.div>
-    </div>
+              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all text-2xl">
+                →
+              </div>
+            </button>
+          </motion.div>
+        </div>
       </motion.div >
     </section >
   );

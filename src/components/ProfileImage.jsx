@@ -1,5 +1,5 @@
 import React from 'react';
-import { PROFILE_PIC } from '../constants';
+import { PROFILE_PIC } from '../constants'
 
 const ProfileImage = ({ size = "large" }) => {
   const isLarge = size === "large";
@@ -8,7 +8,7 @@ const ProfileImage = ({ size = "large" }) => {
   return (
     <div className={`relative ${dim}`}>
       <div className="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
-    
+
       <div className="absolute inset-0 z-20 pointer-events-none">
         <div className="animate-orbit absolute left-1/2 top-1/2 -ml-6 -mt-6 p-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl">
           <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSU4MxiRqiI30iR6qB7ahfJxiMzB02mm_M37_DCfBRayGH-dsCyeDnSDj-DQ9XLk_y0IJPy-HvIljpQa5tVq5zrz5o-D2gsJ-XVfytJ-Y_TIo_GRaF-tdm2GAWuGvWJwGNAmNTqaOB3ni33yQGQoHrXIjgqcdhtkYgbK48_LR9JzrFSfedwu_O9sgoya-E4IaumPB4M91zECfFYPYM-MyEtXkMcApbJnhAgHnHkcPTHVLcOzOP9sS3tBfFeF1z9OHCWbAuzJkNX6Q" className="w-8 h-8" alt="React" />
@@ -38,10 +38,10 @@ const ProfileImage = ({ size = "large" }) => {
 
       <div className="w-full h-full rounded-full border-2 border-primary/20 p-4 relative overflow-hidden group">
         <div className="w-full h-full rounded-full border-2 border-primary/40 p-4">
-          <img 
-            src={PROFILE_PIC} 
-            alt="Rana Hammad Ali" 
-            className="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-700"/>
+          <img
+            src={PROFILE_PIC}
+            alt="Rana Hammad Ali"
+            className="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-700" />
         </div>
       </div>
     </div>
