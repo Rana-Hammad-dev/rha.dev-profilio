@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { stats } from '../constants';
-import { ABOUT_PIC } from '../constants'
+import { stats,ABOUT_PIC } from '../constants';
 
 const Architect = ({ variants, itemVariants }) => {
   return (

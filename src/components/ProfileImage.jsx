@@ -32,16 +32,16 @@ const ProfileImage = ({ size = "large" }) => {
           <img src="https://avatars.githubusercontent.com/u/2723708?s=200&v=4" className="w-8 h-8 p-1" alt="Docker" />
         </div>
         <div className="animate-orbit-reverse absolute left-1/2 top-1/2 -ml-6 -mt-6 p-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl" style={{ animationDelay: '-14s' }}>
-          <img src="/react.jfif" className="w-8 h-8" alt="Reactjs" />
+          <img src="/react.jpg" className="w-8 h-8" alt="Reactjs" />
         </div>
       </div>
 
       <div className="w-full h-full rounded-full border-2 border-primary/20 p-4 relative overflow-hidden group">
         <div className="w-full h-full rounded-full border-2 border-primary/40 p-4">
-          <img
-            src={PROFILE_PIC}
-            alt="Rana Hammad Ali"
-            className="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-700" />
+          <img 
+            src={PROFILE_PIC} 
+            alt="Rana Hammad Ali" 
+            className="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-700"/>
         </div>
       </div>
     </div>
