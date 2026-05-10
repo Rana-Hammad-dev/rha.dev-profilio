@@ -1,5 +1,4 @@
 import React from 'react';
-import { PROFILE_PIC } from '../constants';
 
 const ProfileImage = ({ size = "large" }) => {
   const isLarge = size === "large";
@@ -39,7 +38,7 @@ const ProfileImage = ({ size = "large" }) => {
       <div className="w-full h-full rounded-full border-2 border-primary/20 p-4 relative overflow-hidden group">
         <div className="w-full h-full rounded-full border-2 border-primary/40 p-4">
           <img 
-            src={PROFILE_PIC} 
+            src="/profile.jfif" 
             alt="Rana Hammad Ali" 
             className="w-full h-full object-cover rounded-full grayscale group-hover:grayscale-0 transition-all duration-700"/>
         </div>
