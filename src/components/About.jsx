@@ -23,9 +23,6 @@ const Architect = ({ variants, itemVariants }) => {
                   src={ABOUT_PIC}
                   className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 scale-105 group-hover:scale-100"
                   alt="Rana Hammad Ali"
-                  onError={(e) => {
-                    e.target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60"></div>
                 <div className="absolute bottom-10 left-10 right-10">
