@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-h1: "Syne", sans-serif;
+  --font-h2: "Syne", sans-serif;
+  --font-h3: "Syne", sans-serif;
+  --font-body-lg: "DM Sans", sans-serif;
+  --font-body-md: "DM Sans", sans-serif;
+  --font-label-caps: "Syne", sans-serif;
+
+  --color-primary: #cfbdff;
+  --color-primary-container: #9a83db;
+  --color-on-primary-container: #30166b;
+  --color-background: #141318;
+  --color-surface: #141318;
+  --color-surface-container: #201f24;
+  --color-on-surface: #e6e1e9;
+  --color-on-surface-variant: #cac4d2;
+  --color-tertiary: #e7c365;
+  --color-secondary: #cdc0e8;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body-md;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%), 
+      radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 0.2) 0, transparent 50%), 
+      radial-gradient(at 100% 0%, hsla(180, 50%, 20%, 0.1) 0, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/3 backdrop-blur-xl border border-white/7 transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply border-white/15 -translate-y-1 shadow-[0_0_30px_rgba(207,188,255,0.1)];
+  }
+
+  .glow-text {
+    text-shadow: 0 0 15px rgba(207, 188, 255, 0.4);
+  }
+
+  .tech-tag {
+    @apply bg-primary/5 border border-primary/20 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest;
+  }
+
+  .vertical-line {
+    background: linear-gradient(to bottom, transparent, #cfbdff, transparent);
+  }
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+
+@keyframes orbit-reverse {
+  from { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+  to { transform: rotate(0deg) translateX(140px) rotate(0deg); }
+}
+
+.animate-orbit {
+  animation: orbit 12s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 15s linear infinite;
+}
+
